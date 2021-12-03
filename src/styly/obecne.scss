@@ -1,0 +1,19 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	
+}
+
+$hlavni-barva: #282546
