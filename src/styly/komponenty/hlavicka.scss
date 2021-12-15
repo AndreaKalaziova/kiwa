@@ -17,9 +17,17 @@
             padding: 1rem 1.5rem;
             font-size: 1.5rem;
         }
+        &__polozka a {            
+            text-decoration: none;
+            color: $bila-barva;
+        }
+        &__polozka a:hover,
+        &__polozka a:focus{
+            color: $bila-hover;
+            font-weight: 600;
+        }
 
     }
-
 }
 
 

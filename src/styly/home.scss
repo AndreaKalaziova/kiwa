@@ -1,5 +1,5 @@
 main{
-    width: 1100px;
+    width: 1200px;
     margin: auto;
     background-image: url("/obrazky/St Kilda_trim.JPG");
     background-repeat: no-repeat;
@@ -34,11 +34,18 @@ main{
         text-shadow: 2px 2px $hlavni-barva;
         margin: 0.5rem;
     }
+    &-nadpis:hover {
+        color: $bila-hover;
+    }
+    &-nadpis a:hover {
+        color: $bila-hover;
+    }
+
 }
 
 
 .central-logo {
-    margin: 0 1rem 12em;
+    margin: 0 1rem 10em;
     padding: 1.5rem;
 }
 
