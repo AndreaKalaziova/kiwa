@@ -1,9 +1,9 @@
 .hlavicka {
 	background-color: $hlavni-barva;
-    color: #ffffff;
+    color: $bila-barva;
     display: flex;    
     justify-content:space-between;
-    padding: 1rem 10rem 1rem;
+    padding: 0 10rem;
     
     &__logo {
         padding: 1rem 0;
