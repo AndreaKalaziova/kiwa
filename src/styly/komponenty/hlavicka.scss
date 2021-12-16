@@ -1,22 +1,16 @@
 .hlavicka {
 	background-color: $hlavni-barva;
     color: $bila-barva;
-    display: flex;    
-    justify-content:space-between;
-    padding: 0 10rem;
-    
+        
     &__logo {
-        padding: 1rem 0;
+        padding-top: 0,5rem;
     }
 
     &__menu {
-        display: flex;
         list-style: none;
-    
-        &__polozka {
-            padding: 1rem 1.5rem;
-            font-size: 1.5rem;
-        }
+        padding-left: 1.7rem;
+        margin-top: 0%;
+       
         &__polozka a {            
             text-decoration: none;
             color: $bila-barva;
@@ -26,8 +20,26 @@
             color: $bila-hover;
             font-weight: 600;
         }
-
     }
 }
 
+@media (min-width: 500px){
+    .hlavicka{
+        display: flex;
+        justify-content:space-between;
+        padding: 0 10rem;
 
+        &__logo {
+            padding: 1rem 0;
+        }
+
+        &__menu {
+            display: flex;
+
+            &__polozka {            
+                padding: 1rem 1.5rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
