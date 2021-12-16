@@ -9,12 +9,13 @@
     &__vypis-polozka{
         list-style: none;
         margin-left: -1rem;
+    }
     
-        &-polozka a{
+    &__vypis-polozka a{
             color: $hlavni-barva;
             text-decoration: none;
-        }
     }
+
 }
 
 @media (min-width: 500px){
