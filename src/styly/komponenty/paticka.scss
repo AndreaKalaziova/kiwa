@@ -4,14 +4,19 @@
     padding: 1rem 10rem;
 
     display: grid;
-    grid-template-columns: (repeat(4, 1fr));
+    grid-template-columns: (repeat(5, 1fr));
     
     &__kontakty__tel{
     grid-column: 2;
     }
 
-    &__kontakty__adrs {
+    &__kontakty__social {
     grid-column: 3;
+    text-align: center;
+    }
+    
+    &__kontakty__adrs {
+        grid-column: 4;
     }
 
     &__kontakty {
