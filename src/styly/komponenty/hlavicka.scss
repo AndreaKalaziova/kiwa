@@ -1,12 +1,12 @@
-.hlavicka {
+.hlavicka{
 	background-color: $hlavni-barva;
     color: $bila-barva;
         
-    &__logo {
+    &__logo{
         padding-top: 0,5rem;
     }
 
-    &__menu {
+    &__menu{
         list-style: none;
         padding-left: 1.7rem;
         margin-top: 0%;
@@ -29,14 +29,15 @@
         justify-content:space-between;
         padding: 0 10rem;
 
-        &__logo {
+        &__logo{
             padding: 1rem 0;
         }
 
-        &__menu {
+        &__menu{
             display: flex;
+            padding-top: 1rem;
 
-            &__polozka {            
+            &__polozka{            
                 padding: 1rem 1.5rem;
                 font-size: 1.5rem;
             }
