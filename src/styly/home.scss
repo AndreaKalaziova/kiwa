@@ -31,10 +31,15 @@ main{
         text-shadow: 2px 2px $hlavni-barva;
         margin: 0.5rem;
     }
-    &-nadpis:hover {
+    &-nadpis a{
+        text-decoration: none;
+        color: $bila-barva;
+    }
+
+    &-nadpis:hover{
         color: $bila-hover;
     }
-    &-nadpis a:hover {
+    &-nadpis a:hover{
         color: $bila-hover;
     }
 
@@ -67,9 +72,9 @@ main{
     }
 
     .central-logo {
-        width: 100%;
+        width: 90%;
         height: auto;
-        margin: 0 1rem 10rem;
+        margin-bottom: 10rem;
         padding: 1.5rem;
     }
 }

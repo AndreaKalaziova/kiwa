@@ -1,0 +1,46 @@
+.aboutMe{
+    width: 100%;
+    padding: 1rem;
+    color: $hlavni-barva;
+    text-align: justify;
+
+    &__photo-Ivan{
+        margin:auto;
+        width: 100%;
+        height: auto;
+    }
+
+    &__photo{
+        width: 370px;
+        height: 270px;
+    }
+
+    &__section{
+        padding: 0.5rem 0;
+    }   
+}
+
+@media (min-width: 450px){
+    .aboutMe{
+        width: 1200px;
+        margin: auto;
+
+        &__photo-Ivan{
+            margin: 0 0 0 2rem;
+            width: 320px;
+            height: auto;
+            float: right;
+        }
+        &__photo{
+            width: 370px;
+            height: 270px;
+            margin:1rem 0.4rem 2rem;
+        }
+        &__section{
+            padding: 2rem 0;
+        }
+        &-galery{
+            margin:2rem 0;
+        }
+    }
+}
