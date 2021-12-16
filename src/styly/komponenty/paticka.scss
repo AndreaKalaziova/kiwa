@@ -1,36 +1,37 @@
 .paticka {
+    
     background-color: $hlavni-barva;
     color: #ffffff;
-    padding: 1rem 10rem;
-
-    display: grid;
-    grid-template-columns: (repeat(5, 1fr));
     
-    &__kontakty__tel{
-    grid-column: 2;
-    }
-
-    &__kontakty__social {
-    grid-column: 3;
-    text-align: center;
-    }
-    
-    &__kontakty__adrs {
-        grid-column: 4;
-    }
-
     &__kontakty {
-        list-style: none;
-    
+        list-style: none;      
+
         &__polozka a {
             text-decoration: none;
             color: $bila-barva;
         }
-
     }
-
 }
 
+@media (min-width: 500px){
+    .paticka {
+       display: grid;
+       grid-template-columns: (repeat(5, 1fr));
+       margin: 0;
+       padding: 1rem 10rem;
 
-
+       &__kontakty__tel{
+        grid-column: 2;
+        }
+    
+        &__kontakty__social {
+        grid-column: 3;
+        text-align: center;
+        }
+        
+        &__kontakty__adrs {
+            grid-column: 4;
+        }
+    }
+}
 
