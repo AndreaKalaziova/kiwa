@@ -5,13 +5,8 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.main__cards {
-    display: grid;
-}
-
 .main__section {
-    width: 415px;
+    width: 96%;
     color: $bila-barva;
     border: 2px solid $bila-barva;
     border-radius: 4px;
@@ -24,7 +19,6 @@ main{
         width: 95%;
         height: auto;
     }
-
     &-nadpis{
         font-size: 1.7rem;
         font-weight: 600;
@@ -35,17 +29,14 @@ main{
         text-decoration: none;
         color: $bila-barva;
     }
-
     &-nadpis:hover{
         color: $bila-hover;
     }
     &-nadpis a:hover{
         color: $bila-hover;
     }
-
 }
-
-.central-logo {
+.central-logo{
     width: 425px;
     height: auto;
     margin: 0;
@@ -53,28 +44,35 @@ main{
 }
 
 @media (min-width: 450px){
-    main {width: 1200px;
+    main{width: 100%;
         margin: auto;
     }
-
-    .main__section {
+    .main__section{
         width: 95%;
 
         &-obr{
             width: 100%;
             height: auto;
         }
+        &-nadpis{
+           font-size: 1.3rem;
+        }
     }
-
-    .main__cards {
+    .main__cards{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-
-    .central-logo {
+    
+    .central-logo{
         width: 90%;
         height: auto;
         margin-bottom: 10rem;
         padding: 1.5rem;
     }
 }
+
+@media (min-width: 780px){
+    main{width: 80%;
+    }
+}
+

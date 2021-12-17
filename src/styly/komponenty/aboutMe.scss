@@ -1,20 +1,18 @@
 .aboutMe{
     width: 100%;
     padding: 1rem;
+    margin:0;
     color: $hlavni-barva;
     text-align: justify;
 
     &__photo-Ivan{
-        margin:auto;
         width: 100%;
         height: auto;
     }
-
     &__photo{
-        width: 370px;
-        height: 270px;
+        width: 100%;
+        height: auto;
     }
-
     &__section{
         padding: 0.5rem 0;
     }   
@@ -22,25 +20,39 @@
 
 @media (min-width: 450px){
     .aboutMe{
-        width: 1200px;
         margin: auto;
 
         &__photo-Ivan{
-            margin: 0 0 0 2rem;
-            width: 320px;
+            margin: 0 0 2rem 2rem;
+            width: 45%;
             height: auto;
             float: right;
         }
-        &__photo{
-            width: 370px;
-            height: 270px;
-            margin:1rem 0.4rem 2rem;
+        &-galery{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem
+        }
+        &__section{
+            padding: 1.5rem 0;
+        }
+    }
+}
+
+@media (min-width: 780px){
+    .aboutMe{
+        padding: 5rem;
+    
+        &__photo-Ivan{
+            width: 350px;
         }
         &__section{
             padding: 2rem 0;
         }
         &-galery{
-            margin:2rem 0;
+            margin: 3rem 0;
+            gap: 2rem;
         }
     }
 }
+

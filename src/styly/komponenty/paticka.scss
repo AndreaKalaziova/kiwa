@@ -7,8 +7,8 @@
 
         &__social{
             margin-left: 1rem;
+            margin-top: 1.5rem;
         }
-
         &__polozka a{
             text-decoration: none;
             color: $bila-barva;
@@ -19,22 +19,38 @@
 @media (min-width: 450px){
     .paticka{
        display: grid;
-       grid-template-columns: (repeat(5, 1fr));
-       margin: 0;
-       padding: 1rem 10rem;
-
-            &__kontakty__tel{
-                grid-column: 2;
-            }
+       grid-template-columns: (repeat(3, 1fr));
+       margin: 0;       
+       padding: 1rem;
     
-            &__kontakty__social{
-                grid-column: 3;
-                text-align: center;
-            }
-        
-            &__kontakty__adrs{
-                grid-column: 4;
-            }
+       &__kontakty{
+         padding-left: 0;
+       }
+        &__kontakty__social{
+            text-align: center;
+            margin-top:0;
+        }
+        &__kontakty__adrs{
+            padding-left: 1.5rem;
+        }
     }
 }
 
+@media (min-width: 780px){
+    .paticka {
+        grid-template-columns: auto 1fr 1fr 1fr auto;
+
+        &__kontakty__tel{
+            grid-column: 2;
+            padding-left: 32%;
+        }    
+        &__kontakty__social{
+            grid-column: 3;
+            text-align: center;
+        }        
+        &__kontakty__adrs{
+            grid-column: 4;
+            padding-left: 0;
+        }
+    }
+}
