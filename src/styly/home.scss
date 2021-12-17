@@ -37,7 +37,7 @@ main{
     }
 }
 .central-logo{
-    width: 425px;
+    width: 70%;
     height: auto;
     margin: 0;
     padding: 1.5rem;
@@ -61,18 +61,37 @@ main{
     .main__cards{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }
-    
+    }    
     .central-logo{
-        width: 90%;
+        width: 50%;
         height: auto;
-        margin-bottom: 10rem;
+        margin-bottom: 9rem;
         padding: 1.5rem;
     }
 }
 
 @media (min-width: 780px){
     main{width: 80%;
+        background-size: cover;
+        padding: 2rem;
+    }
+    .main__section{
+        width: 95%;
+
+        &-nadpis{
+           font-size:2rem;
+        }
+        &-obr{
+            width: 95%;
+            height: auto;
+        }
+    }
+    .main__cards{
+        gap:2rem;
+    }
+    .central-logo{
+        margin-bottom: 17rem;
+      
     }
 }
 
