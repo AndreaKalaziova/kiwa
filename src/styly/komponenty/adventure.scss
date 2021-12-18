@@ -5,6 +5,9 @@
     color: $hlavni-barva;
     text-align: justify;
  
+    &__nadpis3{
+        margin-bottom: 0;
+    }
     &__section{
         padding: 0.5rem 0;
 
@@ -28,23 +31,28 @@
 @media (min-width: 450px){
     .adventure{
         margin: auto;
+        padding: 2rem;
 
+        &__nadpis3{
+            font-size: 1.5rem;
+            margin-top: 3rem;
+        }
         &__section{
             padding: 1.5rem 0;
-
-            &__section-photo{                
+            
+            &-photo{
                 width: 40%;
                 height: auto;
                 float: left;
-            }
-    
+                margin-right: 2rem;
+            }    
         }
     }
 }
 
-@media (min-width: 780px){
+@media (min-width: 1050px){
     .adventure{
-        padding: 6rem;
+        width: 80%;
         font-size: 1.2rem;
         
         &__nadpis{
@@ -56,7 +64,7 @@
         }
         &__nadpis3{
             font-size: 1.7rem;
-            margin: 3rem 0 0 25rem;
+            margin: 5rem 0 0 25rem;
         }
         &__section{
             display: grid;

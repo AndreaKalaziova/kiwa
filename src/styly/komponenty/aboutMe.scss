@@ -39,8 +39,9 @@
     }
 }
 
-@media (min-width: 780px){
+@media (min-width: 1050px){
     .aboutMe{
+        width: 80%;
         padding: 5rem;
     
         &__photo-Ivan{
