@@ -42,13 +42,16 @@
 @media (min-width: 1050px){
     .aboutMe{
         width: 80%;
-        padding: 5rem;
+        font-size: 1.2rem;
     
         &__photo-Ivan{
             width: 350px;
         }
         &__section{
-            padding: 2rem 0;
+            padding: 2.5rem 0;
+            &-pozdrav{
+                font-size: 2rem;
+            }
         }
         &-galery{
             margin: 3rem 0;
