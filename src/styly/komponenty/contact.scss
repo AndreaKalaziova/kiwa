@@ -20,8 +20,8 @@
 
 @media (min-width: 450px){
     .contact{
-        width: 1200px;
         margin: auto;
+        font-size: 1.2rem;
         padding: 1rem 0.5rem 10rem;
     
         &__nadpis{
@@ -31,5 +31,12 @@
         &__vypis-polozka{
             padding-bottom: 0.5rem;
         }
+    }
+}
+
+@media (min-width: 780px){
+    .contact{
+        width: 80%;
+        font-size: 1.5rem;
     }
 }
