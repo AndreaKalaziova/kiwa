@@ -30,8 +30,8 @@
         }
         &-galery{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 0.5rem
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.3rem
         }
         &__section{
             padding: 1.5rem 0;
@@ -45,7 +45,7 @@
         font-size: 1.2rem;
     
         &__photo-Ivan{
-            width: 350px;
+            width: 330px;
         }
         &__section{
             padding: 2.5rem 0;
@@ -54,8 +54,9 @@
             }
         }
         &-galery{
+            grid-template-columns: repeat(5, 1fr);
             margin: 3rem 0;
-            gap: 2rem;
+            gap: 1rem;
         }
     }
 }
