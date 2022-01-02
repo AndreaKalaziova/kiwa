@@ -8,14 +8,24 @@
     &__photo-Ivan{
         width: 100%;
         height: auto;
+        box-shadow: 5px 5px 6px #28254663;
     }
     &__photo{
         width: 100%;
         height: auto;
+        box-shadow: 5px 6px 6px #28254663;
     }
     &__section{
         padding: 0.5rem 0;
+        
+        &-favicon{
+            margin-right: .5rem;
+        }
     }   
+    &__nabidka{
+        list-style: none;
+        padding-left: 0;
+    }
 }
 
 @media (min-width: 450px){
@@ -48,14 +58,15 @@
             width: 330px;
         }
         &__section{
-            padding: 2.5rem 0;
+            padding: 1rem 0;
             &-pozdrav{
-                font-size: 2rem;
+                font-size: 1.7rem;
+                font-weight: 600;
             }
         }
         &-galery{
             grid-template-columns: repeat(5, 1fr);
-            margin: 3rem 0;
+            margin: 2rem 0;
             gap: 1rem;
         }
     }
