@@ -1,0 +1,109 @@
+.expedition{
+    width: 100%;
+    padding: 1rem;
+    margin:0;
+    color: $hlavni-barva;
+    text-align: justify;
+
+    & p{
+        margin-bottom:0.2rem;
+    }
+
+    &__nadpis3{
+        margin: auto 0;
+    }    
+    &__section{
+        padding: 0.5rem 0;
+
+        &-nazev{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            margin-top:1rem;
+        }
+        &-photo{
+            width: 100%;
+            height: auto;
+            margin: auto;
+            box-shadow: 5px 7px 5px #28254663;
+        }
+        &-button{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            padding: 1rem 1.5rem;
+            margin-top: 1rem;
+            background-color: $hlavni-barva;
+            color: $bila-barva;
+            border-radius: 5px;
+            border-style: none;
+            box-shadow: 4px 4px 5px #39384963;
+        }
+        &-button a{
+            color: $bila-barva;
+            text-decoration: none;
+        }
+    }
+}
+hr{
+    margin:1rem 0 1.5rem;
+}
+
+@media (min-width: 450px){
+    .expedition{
+        margin: auto;
+        padding: 2rem;
+
+        &__nadpis3{
+            font-size: 1.5rem;
+        }
+        &__section{
+            padding: 1.5rem 0;
+            
+            &-nazev{
+                grid-template-columns: 1fr 6fr;
+                margin:2rem 0
+            }    
+        }
+    }
+    hr{
+        margin: 1rem 0 2rem;
+        background-color: $hlavni-barva;
+    }
+}
+
+@media (min-width: 1050px){
+    .expedition{
+        width: 80%;
+        font-size: 1.2rem;
+        
+        &__nadpis{
+            font-size: 2rem;
+        }
+        &__nadpis3{
+            font-size: 1.7rem;
+        }
+        &__section{
+            display: grid;
+            grid-template-rows: auto auto;
+
+            &-photo{
+                width: 100%;
+                height: auto;
+                margin-right: 2rem;
+            }
+            &-nazev{
+                grid-template-columns: 1fr 6fr;
+            }
+            &-favicon{
+                width: 100px;
+                height: 100px;
+            }
+            &-text{
+               
+                margin: auto 0;
+            }
+        }
+    }
+    hr{margin:1rem 0 2.5rem}
+}
+
+
