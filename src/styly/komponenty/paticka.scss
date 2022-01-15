@@ -3,11 +3,15 @@
     color: #ffffff;
     
     &__kontakty{
-        list-style: none;      
+        list-style: none;
 
-        &__social{
-            margin-left: 1rem;
+        &__social{           
+            margin-left: 2.5rem;
             margin-top: 1.5rem;
+
+            &-ikona{
+                margin: 0 0.2rem;
+            }
         }
         &__polozka a{
             text-decoration: none;
@@ -28,7 +32,7 @@
        }
         &__kontakty__social{
             text-align: center;
-            margin-top:0;
+            margin-left: 0;
         }
         &__kontakty__adrs{
             padding-left: 1.5rem;
